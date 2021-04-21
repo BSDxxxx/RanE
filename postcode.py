@@ -78,11 +78,11 @@ def loginpost(datas):
     print(js)
 
 # 编解码测试
-print(decodemsg(16421077, "b262ac856f59a182dfc9f4ab6ca18710420ea551"))
-print(encodemsg(51907146, '{"errCode":0,"errMsg":"物品已被兑换完了"}'))
+# print(decodemsg(16421077, "b262ac856f59a182dfc9f4ab6ca18710420ea551"))
+# print(encodemsg(51907146, '{"errCode":0,"errMsg":"物品已被兑换完了"}'))
 
-datas = "t=39660841&v=a2266fedd5dabe76c64bee1080116d96d58bcbc19f2c722f0a0411ac8836abc2f373bf4e5aa8a8d773a99e4a6591121c19e00c4fffb8ecd8c2029f6624a403f7dc72a25ef3b0f976f746268c0a0c928bb054449025f3221010bbef5adfda3d007291ed8ea3dd4bb80298617e5e2192e226e9bc61"#此处可以填login抓包的全部参数，用于登录，实测不登录，只要ts足够大就能响应请求
-uid = "B8D8E72C33407333485083AA468FBB0C" #个人的uid，右上角头像出可查看
+datas = "t=15081747&v=31aa59614a04219d4b5ae85b089ebadee37585cf7696a9cafab5a4d65582dbf020f6e2fc0353923d8a2a76e7fdcddecee1ec804c0b843644c300ea455c82aa6c77dd70e1783d76ba20573974c43e15e63b954cf577c4e5a6c7f71bba12e9532cb7d03414ff1e1de8a28fdd394a2eed8a7a24a373baf3895db0c024e11a68fc789d343d20b3b9c3cba5f00af1477862844f81f1aa63170043db7efd04099c7ecdb6cf069619586dd74cf455cdbaa5045a26b933e5055c364139bbc230eb03d1773aea63bc3c3ea090740ca3e283c54fba20db06d0fc5b6477e6df210c11a7dccfdcfca75b3a76c7f7be94675dc549100f428c12df86d95ab9d8472fbc473fc11fb78c86374d80"#此处可以填login抓包的全部参数，用于登录，实测不登录，只要ts足够大就能响应请求
+uid = "F78D4B61834FEA0406A1BB6EC959FAA9" #个人的uid，右上角头像出可查看
 loginpost(datas) #发送登陆数据
 
 # gift id
